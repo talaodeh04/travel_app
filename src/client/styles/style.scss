@@ -1,0 +1,161 @@
+/* ألوان مميزة ضمن درجات الأزرق */
+$primary-color: #007bff;   /* أزرق فاتح */
+$secondary-color: #00a2ff; /* أزرق سماوي */
+$accent-color: #0056b3;    /* أزرق داكن */
+$background-color: #e3f2fd; /* أزرق فاتح جداً */
+$hover-color: #004494;      /* أزرق غامق للتفاعل */
+
+/* إعدادات الأساس */
+body {
+  background: url('/image.jpg') no-repeat center center/cover;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+  background: rgba(255, 255, 255, 0.95); /* شفافية أقل لتعزيز وضوح الخلفية */
+  
+  width: 85%;
+  max-width: 1000px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الأقسام */
+.components {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.inputs, .outputs {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 280px;
+}
+
+.inputs {
+  margin-right: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: $primary-color;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border: 1px solid $accent-color;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s, transform 0.3s, background-color 0.3s ease;
+  background-color: #ffffff; /* خلفية الحقول غير شفافة */
+}
+
+input:focus {
+  border-color: $secondary-color;
+  transform: scale(1.02);
+  background-color: #f0f8ff; /* خلفية الحقول تتغير عند التركيز */
+}
+
+/* زر الإرسال */
+button {
+  width: 80%;
+  padding: 12px;
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: $hover-color;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: $primary-color;
+  font-size: 1.8rem;
+}
+
+/* تنسيق صور السفر */
+.travel-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.travel-images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.travel-images img:hover {
+  transform: scale(1.1) rotate(3deg);
+  filter: brightness(1.2); /* إضافة تأثير اللمعان عند التحويم */
+}
+
+/* تخصيص للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .components {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .inputs, .outputs {
+    width: 100%;
+    text-align: center;
+  }
+
+  input {
+    width: 80%;
+  }
+}

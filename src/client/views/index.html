@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Travel Planner</h1>
+      <div class="components">
+        <!-- Input section for trip details -->
+        <div class="inputs">
+          <form action="">
+            <label for="country">My trip to:</label>
+            <input type="text" id="country" name="country" required placeholder="Enter country name" />
+            
+            <label for="travel-date">Travel Date:</label>
+            <input type="date" id="travel-date" name="travel-date" required />
+            
+            <label for="return-date">Return Date:</label>
+            <input type="date" name="return-date" id="return-date" required />
+            
+            <input type="submit" value="Get Trip Details" />
+          </form>
+        </div>
+
+        <!-- Output section for trip details -->
+        <div class="outputs">
+          <h3>Trip Details:</h3>
+          <p class="length">Trip Length:</p>
+          <p class="countdown">Trip Countdown:</p>
+          <p class="weather">Weather forecast:</p>
+          <img src="" alt="Weather image" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>
