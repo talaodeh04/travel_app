@@ -1,28 +1,43 @@
-# Travel App  
-*Author:* Tala Odeh  
+# 🌍 Travel Planner  
 
-## 🚀 Travel Planner  
-Travel Planner is an intuitive web application designed to assist users in planning their trips efficiently. It offers the following features:  
+**Author:** Tala Odeh  
 
-- *Weather forecasts* for your selected destination.  
-- *Trip duration calculations* to help you plan your itinerary.  
-- *Countdown to your departure* to keep you on track.  
-- *Destination images* to enhance the planning experience visually.  
+## 🚀 About the Project  
+**Travel Planner** is a modern web application designed to help users efficiently plan their trips. It provides essential travel details, including:  
+
+✅ **Weather Forecasts** – Get real-time weather updates for your destination.  
+✅ **Trip Duration Calculation** – Automatically calculate the length of your trip.  
+✅ **Countdown Timer** – Keep track of your departure date.  
+✅ **Destination Images** – View related images to enhance your planning experience.  
+
+---
 
 ## 🛠 Tech Stack  
-- *Languages:* HTML, SCSS, JavaScript  
-- *Backend:* Node.js, Express.js  
-- *Build Tools:* Webpack  
+The project is built using the following technologies:  
+
+- **Frontend:** HTML, SCSS, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Build Tools:** Webpack  
+
+---
 
 ## 🌍 APIs Used  
-- *GeoNames API*: Provides geographical data such as location names, latitudes, and longitudes.  
-- *Weatherbit API*: Delivers accurate weather forecasts for the selected destination.  
-- *Pixabay API*: Retrieves beautiful, royalty-free images related to the destination for an enriched visual experience.  
+This project integrates several APIs to provide real-time travel information:  
 
-## 🚀 How to Run the Project  
-### Install Dependencies  
-This project was developed using *Node.js v22.13.1*.  
-To ensure compatibility, please use *Node.js v22.13.1* and then run:  
+- 🌎 **GeoNames API** – Retrieves geographical location details.  
+- ☁ **Weatherbit API** – Provides weather forecasts for the selected destination.  
+- 🖼 **Pixabay API** – Fetches high-quality images related to the destination.  
 
+---
+
+## 🚀 Installation & Setup  
+To run this project locally, follow these steps:  
+
+### **1️⃣ Prerequisites**  
+Ensure you have **Node.js v22.13.1** installed. If you don’t have it, download it from:  
+🔗 [Node.js Official Website](https://nodejs.org/)  
+
+### **2️⃣ Clone the Repository**  
 ```bash
-npm install
+git clone https://github.com/talaodeh04/travel_app.git
+cd travel_app
